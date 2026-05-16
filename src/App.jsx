@@ -6,23 +6,23 @@ const A = "/livetile/";
 
 const images = {
   logo: `${A}livetile-logo-grow.svg`,
-  hero: `${A}microgreens-home-slide.png`,
-  water: `${A}water-system-slide.png`,
-  wall: `${A}hero-modular-wall.png`,
-  tile: `${A}product-single-tile.png`,
-  light: `${A}lighting-modules.png`,
-  tech: `${A}technical-sheet.png`,
-  texture: `${A}product-texture-close.png`,
-  texture2: `${A}product-texture-close2.png`,
-  materialStrip: `${A}material-details-strip.png`,
-  front: `${A}front-view.png`,
-  section: `${A}side-view.png`,
-  assembly: `${A}edge2edge.png`,
-  interior: `${A}interior-wall-wide.png`,
-  exterior: `${A}exterior-wall-wide.png`,
-  brand: `${A}brand-system-board.png`,
-  foundation: `${A}foundation-board.png`,
-  atmosphere: `${A}atmosphere-board.png`,
+  hero: `${A}microgreens-home-slide.webp`,
+  water: `${A}water-system-slide.webp`,
+  wall: `${A}hero-modular-wall.webp`,
+  tile: `${A}product-single-tile.webp`,
+  light: `${A}lighting-modules.webp`,
+  tech: `${A}technical-sheet.webp`,
+  texture: `${A}product-texture-close.webp`,
+  texture2: `${A}product-texture-close2.webp`,
+  materialStrip: `${A}material-details-strip.webp`,
+  front: `${A}front-view.webp`,
+  section: `${A}side-view.webp`,
+  assembly: `${A}edge2edge.webp`,
+  interior: `${A}interior-wall-wide.webp`,
+  exterior: `${A}exterior-wall-wide.webp`,
+  brand: `${A}brand-system-board.webp`,
+  foundation: `${A}foundation-board.webp`,
+  atmosphere: `${A}atmosphere-board.webp`,
 };
 
 const navItems = ["Food", "System", "Water", "Module", "Access"];
@@ -451,7 +451,7 @@ export default function LivetileWebsite() {
       className="min-h-[320px] md:min-h-[520px]"
     />
   </div>
-</section>
+</section>  
 
       <footer className="border-t border-black/8 px-5 py-10 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 text-[11px] uppercase tracking-[0.25em] text-[#8c8982] md:flex-row">
