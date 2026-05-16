@@ -132,66 +132,120 @@ export default function LivetileWebsite() {
         )}
       </header>
 
-      <section className="relative px-5 pb-20 pt-28 md:px-8 md:pb-28 md:pt-36">
-        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[0.78fr_1.22fr]">
-          <motion.div initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }} className="relative z-10">
-            <div className="mb-10 text-[11px] uppercase tracking-[0.34em] text-[#66735d]">Fresh greens. Living wall. Calm technology.</div>
-            <h1 className="max-w-3xl text-5xl font-light tracking-[-0.055em] text-[#1f1f1f] md:text-7xl lg:text-8xl">
-              Fresh greens, built into the wall.
-            </h1>
-            <p className="mt-7 max-w-xl text-lg font-light leading-8 text-[#5f5b54]">
-              LIVETILE is a modular wall system for growing fresh herbs, salads and microgreens at home — basil, mint, dill, parsley and leafy greens, always alive and always within reach.
-            </p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <a href="#access" className="rounded-full bg-[#1f1f1f] px-7 py-4 text-center text-sm font-medium text-[#f3f2ee] transition hover:bg-black">Join waitlist</a>
-              <a href="#food" className="rounded-full border border-black/10 bg-white/40 px-7 py-4 text-center text-sm text-[#4c4944] transition hover:border-black/25 hover:text-black">Explore system</a>
-            </div>
-          </motion.div>
-          <motion.div style={{ y: heroY }} className="relative">
-            <ImageFrame src={images.hero} alt="LIVETILE fresh herbs and microgreens at home" className="min-h-[620px] shadow-2xl shadow-black/10" />
-          </motion.div>
-        </div>
-      </section>
+      <section className="relative px-5 pb-14 pt-24 md:px-8 md:pb-28 md:pt-36">
+  <div className="mx-auto grid max-w-7xl items-center gap-8 lg:grid-cols-[0.78fr_1.22fr]">
 
-      <section id="food" className="px-5 py-20 md:px-8 md:py-32">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-            <div>
-              <Kicker>Living nutrition</Kicker>
-              <h2 className="max-w-4xl text-4xl font-light tracking-[-0.045em] md:text-6xl">
-                Not only atmosphere. Everyday food, grown at home.
-              </h2>
-            </div>
-            <p className="max-w-xl text-base leading-8 text-[#605c55]">
-              The system is designed first as a calm domestic food source: fresh herbs, vitamin-rich microgreens and salad leaves growing directly on the wall. It looks architectural because the food system deserves to belong in the interior.
-            </p>
+    <motion.div
+      initial={{ opacity: 0, y: 22 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9 }}
+      className="relative z-10"
+    >
+
+      <div className="mb-10 text-[11px] uppercase tracking-[0.34em] text-[#66735d]">
+        Fresh greens. Living wall. Calm technology.
+      </div>
+
+      <h1 className="max-w-3xl text-4xl font-light tracking-[-0.055em] text-[#1f1f1f] md:text-7xl lg:text-8xl">
+        Fresh greens, built into the wall.
+      </h1>
+
+      <p className="mt-7 max-w-xl text-lg font-light leading-8 text-[#5f5b54]">
+        LIVETILE is a modular wall system for growing fresh herbs,
+        salads and microgreens at home — basil, mint, dill,
+        parsley and leafy greens, always alive and always within reach.
+      </p>
+
+      <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+        <a
+          href="#access"
+          className="rounded-full bg-[#1f1f1f] px-7 py-4 text-center text-sm font-medium text-[#f3f2ee] transition hover:bg-black"
+        >
+          Join waitlist
+        </a>
+
+        <a
+          href="#food"
+          className="rounded-full border border-black/10 bg-white/40 px-7 py-4 text-center text-sm text-[#4c4944] transition hover:border-black/25 hover:text-black"
+        >
+          Explore system
+        </a>
+      </div>
+    </motion.div>
+
+    <motion.div style={{ y: heroY }} className="relative">
+      <ImageFrame
+        src={images.hero}
+        alt="LIVETILE fresh herbs and microgreens at home"
+        className="min-h-[340px] md:min-h-[620px] shadow-2xl shadow-black/10"
+      />
+    </motion.div>
+  </div>
+</section>
+      <section id="food" className="px-5 py-14 md:px-8 md:py-32">
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-10 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+      <div>
+        <Kicker>Living nutrition</Kicker>
+
+        <h2 className="max-w-4xl text-3xl font-light tracking-[-0.04em] md:text-6xl">
+          Not only atmosphere. Everyday food, grown at home.
+        </h2>
+      </div>
+
+      <p className="max-w-xl text-base leading-8 text-[#605c55]">
+        The system is designed first as a calm domestic food source:
+        fresh herbs, vitamin-rich microgreens and salad leaves growing
+        directly on the wall. It looks architectural because the food
+        system deserves to belong in the interior.
+      </p>
+    </div>
+
+    <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
+      <ImageFrame
+        src={images.wall}
+        alt="LIVETILE modular wall with plants and light"
+        className="min-h-[320px] md:min-h-[560px] shadow-xl shadow-black/5"
+      />
+
+      <div className="grid gap-5">
+        <div className="rounded-[2rem] border border-black/8 bg-white/60 p-5 md:p-8">
+          <div className="mb-6 text-[11px] uppercase tracking-[0.25em] text-[#8c8982]">
+            Grow what you love
           </div>
 
-          <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
-            <ImageFrame src={images.wall} alt="LIVETILE modular wall with plants and light" className="min-h-[560px] shadow-xl shadow-black/5" />
-            <div className="grid gap-5">
-              <div className="rounded-[2rem] border border-black/8 bg-white/60 p-6 md:p-8">
-                <div className="mb-6 text-[11px] uppercase tracking-[0.25em] text-[#8c8982]">Grow what you love</div>
-                <div className="flex flex-wrap gap-2">
-                  {greens.map((green) => (
-                    <span key={green} className="rounded-full border border-black/10 bg-[#f3f2ee] px-4 py-2 text-sm text-[#4f4b45]">
-                      {green}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              <div className="grid gap-3 sm:grid-cols-2">
-                {foodBenefits.map(([title, body]) => (
-                  <div key={title} className="rounded-[1.5rem] border border-black/8 bg-white/55 p-5">
-                    <h3 className="text-lg font-light tracking-[-0.02em]">{title}</h3>
-                    <p className="mt-2 text-sm leading-6 text-[#68645d]">{body}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div className="flex flex-wrap gap-2">
+            {greens.map((green) => (
+              <span
+                key={green}
+                className="rounded-full border border-black/10 bg-[#f3f2ee] px-4 py-2 text-sm text-[#4f4b45]"
+              >
+                {green}
+              </span>
+            ))}
           </div>
         </div>
-      </section>
+
+        <div className="grid gap-3 sm:grid-cols-2">
+          {foodBenefits.map(([title, body]) => (
+            <div
+              key={title}
+              className="rounded-[1.5rem] border border-black/8 bg-white/55 p-5"
+            >
+              <h3 className="text-lg font-light tracking-[-0.02em]">
+                {title}
+              </h3>
+
+              <p className="mt-2 text-sm leading-6 text-[#68645d]">
+                {body}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="system" className="px-5 py-20 md:px-8 md:py-32">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr]">
@@ -267,88 +321,137 @@ export default function LivetileWebsite() {
         </div>
       </section>
 
-      <section id="details" className="px-5 py-20 md:px-8 md:py-32">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
-            <div>
-              <Kicker>Material & wall logic</Kicker>
-              <h2 className="max-w-4xl text-4xl font-light tracking-[-0.045em] md:text-6xl">
-                A quiet surface with visible system intelligence.
-              </h2>
-            </div>
-            <p className="max-w-md text-sm leading-7 text-[#66625a]">
-              The product should feel architectural and useful: matte texture, precise seams, living inserts, soft light and readable irrigation.
-            </p>
-          </div>
+      <section id="details" className="px-5 py-14 md:px-8 md:py-32">
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-10 flex flex-col justify-between gap-5 md:mb-12 md:flex-row md:items-end">
+      <div>
+        <Kicker>Material & wall logic</Kicker>
 
-          <div className="grid gap-5 lg:grid-cols-[1.08fr_0.92fr]">
-            <div className="rounded-[2.5rem] bg-[#1f1f1f] p-5 text-[#f3f2ee] md:p-8">
-              <div className="mb-8 flex items-center justify-between text-[11px] uppercase tracking-[0.26em] text-[#b8b6b0]">
-                <span>Surface detail</span>
-                <span>Matte / mineral / precise</span>
-              </div>
-              <ImageFrame src={images.texture} alt="LIVETILE stone-like texture and material close-up" className="min-h-[460px] bg-[#242420]" />
-              <p className="mt-7 max-w-2xl text-sm leading-7 text-[#c9c6bd]">
-                The shell should feel closer to mineral composite or architectural stone than consumer plastic. Texture matters because the object lives at wall scale.
-              
-              </p>
-              <p>&nbsp;</p>
-              <ImageFrame src={images.texture2} alt="LIVETILE stone-like texture and material close-up" className="min-h-[460px] bg-[#242420]" />
-            </div>
+        <h2 className="max-w-4xl text-3xl font-light tracking-[-0.04em] md:text-6xl">
+          A quiet surface with visible system intelligence.
+        </h2>
+      </div>
 
-            <div className="grid gap-5">
-              <div className="rounded-[2rem] border border-black/8 bg-white/60 p-5 md:p-6">
-                <div className="mb-5 flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-[#8c8982]">
-                  <span>System composition</span>
-                  <span>Edge-to-edge</span>
-                </div>
-                <ImageFrame src={images.assembly} alt="LIVETILE modular honeycomb assembly logic" contain className="min-h-[300px] bg-white" />
-                <p className="mt-5 text-sm leading-7 text-[#68645d]">
-                  Modules connect side by side into a honeycomb wall. Living inserts appear through repetition, not as decoration.
-                </p>
-              </div>
-              <div className="rounded-[2rem] border border-black/8 bg-white/60 p-5 md:p-6">
-                <div className="mb-5 flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-[#8c8982]">
-                  <span>Technical sheet</span>
-                  <span>Prototype logic</span>
-                </div>
-                <ImageFrame src={images.tech} alt="LIVETILE technical sheet" contain className="min-h-[300px] bg-white" />
-              </div>
-            </div>
-          </div>
+      <p className="max-w-md text-sm leading-7 text-[#66625a]">
+        The product should feel architectural and useful: matte texture,
+        precise seams, living inserts, soft light and readable irrigation.
+      </p>
+    </div>
+
+    <div className="grid gap-5 lg:grid-cols-[1.08fr_0.92fr]">
+      <div className="rounded-[2rem] bg-[#1f1f1f] p-5 text-[#f3f2ee] md:rounded-[2.5rem] md:p-8">
+        <div className="mb-6 flex flex-col gap-2 text-[11px] uppercase tracking-[0.24em] text-[#b8b6b0] sm:flex-row sm:items-center sm:justify-between md:mb-8">
+          <span>Surface detail</span>
+          <span>Matte / mineral / precise</span>
         </div>
-      </section>
 
-      <section className="px-5 py-20 md:px-8 md:py-32">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
-          <div>
-            <Kicker>Where it belongs</Kicker>
-            <h2 className="max-w-4xl text-4xl font-light tracking-[-0.045em] md:text-6xl">
-              Kitchen, studio, cafe, showroom, apartment.
-            </h2>
-            <p className="mt-7 max-w-xl text-base leading-8 text-[#605c55]">
-              The first installations should feel curated and useful: a beautiful working wall that grows real food and gives the interior a living rhythm.
-            </p>
-          </div>
-          <ImageFrame src={images.interior} alt="LIVETILE interior wall installation" className="min-h-[540px] shadow-xl shadow-black/5" />
-        </div>
-      </section>
+        <ImageFrame
+          src={images.texture}
+          alt="LIVETILE stone-like texture and material close-up"
+          className="min-h-[300px] md:min-h-[460px] bg-[#242420]"
+        />
 
-      <section id="access" className="px-5 py-24 md:px-8 md:py-36">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
-          <div>
-            <Kicker>System of living architectural surfaces</Kicker>
-            <h2 className="mt-10 max-w-3xl text-4xl font-light tracking-[-0.045em] md:text-6xl">
-              Early access for homes and curated installations.
-            </h2>
-            <p className="mt-6 max-w-xl text-base leading-8 text-[#605c55]">
-              For people who want fresh greens at home — and for architects, interior studios, cafes, hospitality spaces and showrooms building the first LIVETILE walls.
-            </p>
-            <WaitlistForm />
-          </div>
-          <ImageFrame src={images.exterior} alt="LIVETILE exterior or terrace wall installation" className="min-h-[520px]" />
+        <p className="mt-6 max-w-2xl text-sm leading-7 text-[#c9c6bd] md:mt-7">
+          The shell should feel closer to mineral composite or architectural
+          stone than consumer plastic. Texture matters because the object lives
+          at wall scale.
+        </p>
+
+        <div className="mt-5 md:mt-7">
+          <ImageFrame
+            src={images.texture2}
+            alt="LIVETILE stone-like texture and material close-up"
+            className="min-h-[300px] md:min-h-[460px] bg-[#242420]"
+          />
         </div>
-      </section>
+      </div>
+
+      <div className="grid gap-5">
+        <div className="rounded-[2rem] border border-black/8 bg-white/60 p-5 md:p-6">
+          <div className="mb-5 flex flex-col gap-2 text-[11px] uppercase tracking-[0.24em] text-[#8c8982] sm:flex-row sm:items-center sm:justify-between">
+            <span>System composition</span>
+            <span>Edge-to-edge</span>
+          </div>
+
+          <ImageFrame
+            src={images.assembly}
+            alt="LIVETILE modular honeycomb assembly logic"
+            contain
+            className="min-h-[240px] md:min-h-[300px] bg-white"
+          />
+
+          <p className="mt-5 text-sm leading-7 text-[#68645d]">
+            Modules connect side by side into a honeycomb wall. Living inserts
+            appear through repetition, not as decoration.
+          </p>
+        </div>
+
+        <div className="rounded-[2rem] border border-black/8 bg-white/60 p-5 md:p-6">
+          <div className="mb-5 flex flex-col gap-2 text-[11px] uppercase tracking-[0.24em] text-[#8c8982] sm:flex-row sm:items-center sm:justify-between">
+            <span>Technical sheet</span>
+            <span>Prototype logic</span>
+          </div>
+
+          <ImageFrame
+            src={images.tech}
+            alt="LIVETILE technical sheet"
+            contain
+            className="min-h-[240px] md:min-h-[300px] bg-white"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section className="px-5 py-14 md:px-8 md:py-32">
+  <div className="mx-auto grid max-w-7xl items-center gap-8 md:gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+    <div>
+      <Kicker>Where it belongs</Kicker>
+
+      <h2 className="max-w-4xl text-3xl font-light tracking-[-0.04em] md:text-6xl">
+        Kitchen, studio, cafe, showroom, apartment.
+      </h2>
+
+      <p className="mt-5 max-w-xl text-base leading-7 text-[#605c55] md:mt-7 md:leading-8">
+        The first installations should feel curated and useful:
+        a beautiful working wall that grows real food and gives
+        the interior a living rhythm.
+      </p>
+    </div>
+
+    <ImageFrame
+      src={images.interior}
+      alt="LIVETILE interior wall installation"
+      className="min-h-[320px] md:min-h-[540px] shadow-xl shadow-black/5"
+    />
+  </div>
+</section>
+      <section id="access" className="px-5 py-16 md:px-8 md:py-36">
+  <div className="mx-auto grid max-w-7xl items-center gap-8 md:gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+    <div>
+      <Kicker>System of living architectural surfaces</Kicker>
+
+      <h2 className="mt-6 max-w-3xl text-3xl font-light tracking-[-0.04em] md:mt-10 md:text-6xl">
+        Early access for homes and curated installations.
+      </h2>
+
+      <p className="mt-5 max-w-xl text-base leading-7 text-[#605c55] md:mt-6 md:leading-8">
+        For people who want fresh greens at home — and for architects,
+        interior studios, cafes, hospitality spaces and showrooms
+        building the first LIVETILE walls.
+      </p>
+
+      <WaitlistForm />
+    </div>
+
+    <ImageFrame
+      src={images.exterior}
+      alt="LIVETILE exterior or terrace wall installation"
+      className="min-h-[320px] md:min-h-[520px]"
+    />
+  </div>
+</section>
 
       <footer className="border-t border-black/8 px-5 py-10 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 text-[11px] uppercase tracking-[0.25em] text-[#8c8982] md:flex-row">
