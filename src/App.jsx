@@ -352,18 +352,16 @@ export default function LivetileWebsite() {
         />
 
         <p className="mt-6 max-w-2xl text-sm leading-7 text-[#c9c6bd] md:mt-7">
-          The shell should feel closer to mineral composite or architectural
-          stone than consumer plastic. Texture matters because the object lives
-          at wall scale.
-        </p>
-
-        <div className="mt-5 md:mt-7">
-          <ImageFrame
-            src={images.texture2}
-            alt="LIVETILE stone-like texture and material close-up"
-            className="min-h-[300px] md:min-h-[460px] bg-[#242420]"
-          />
-        </div>
+          LiveTile is an open modular wall system where nature, atmosphere, and technology merge into a single architectural surface.</p>
+          <p className="mt-6 max-w-2xl text-sm leading-7 text-[#c9c6bd] md:mt-7">
+The same living infrastructure can support fresh herbs, ambient lighting, aroma diffusion, sound, environmental sensors, or intelligent AI-driven modules.
+</p><p className="mt-6 max-w-2xl text-sm leading-7 text-[#c9c6bd] md:mt-7">
+More than decoration or hydroponics, LiveTile transforms static walls into adaptive living architecture designed for future spaces.
+</p><p className="mt-6 max-w-2xl text-sm leading-7 text-[#c9c6bd] md:mt-7">
+The shell should feel closer to mineral composite or architectural stone than consumer plastic. Texture matters because the object lives at wall scale.
+        </p><p className="mt-6 max-w-2xl text-sm leading-7 text-[#c9c6bd] md:mt-7">
+        The decorative layer can be anything. Stone or wood, glossy, matte, any color, texture to suit any interior or exterior.
+</p>
       </div>
 
       <div className="grid gap-5">
