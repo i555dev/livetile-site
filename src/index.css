@@ -15,3 +15,8 @@ body {
 #root, main, .app-container {
   background-color: transparent !important;
 }
+@media (max-width: 768px) {
+  body {
+    background-size: 33%; 
+  }
+}
