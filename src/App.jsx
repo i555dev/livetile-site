@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
+  
+
+
 const A = "/livetile/";
 
 const images = {
@@ -102,9 +105,7 @@ export default function LivetileWebsite() {
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#f3f2ee] text-[#1f1f1f] selection:bg-[#9dbb92] selection:text-black">
-      <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(rgba(31,31,31,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(31,31,31,0.035)_1px,transparent_1px)] bg-[size:72px_72px] opacity-40" />
-
-      <header className="fixed left-0 right-0 top-0 z-50 border-b border-black/[0.06] bg-[#f3f2ee]/82 backdrop-blur-xl">
+           <header className="fixed left-0 right-0 top-0 z-50 border-b border-black/[0.06] bg-[#f3f2ee]/82 backdrop-blur-xl">
         <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:px-8">
           <Logo />
           <nav className="hidden items-center gap-9 text-[11px] uppercase tracking-[0.24em] text-[#6f6c66] md:flex">
@@ -450,6 +451,7 @@ The shell should feel closer to mineral composite or architectural stone than co
     />
   </div>
 </section>  
+
 
       <footer className="border-t border-black/8 px-5 py-10 md:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 text-[11px] uppercase tracking-[0.25em] text-[#8c8982] md:flex-row">
