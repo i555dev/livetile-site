@@ -3,7 +3,7 @@
 @tailwind utilities;
 /* Назначаем картинку главным фоном для всего сайта */
 body {
-    background-image: url('/livetile/hex-bg.svg');
+    background-image: url('/livetile/hex-bg-w.svg');
     background-size: 10%;
     background-position: center;
     background-attachment: fixed;
